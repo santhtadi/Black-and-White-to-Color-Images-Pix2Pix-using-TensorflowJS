@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.1.2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+        <script src="./utils.js"></script>
+        <script src="./pix2pix.js"></script>
+        <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"/>
+        <script src="./bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="topnav">
+          <a class="active" href="#">Home</a>
+          <a href="https://www.linkedin.com/in/santh-kumar-tadi/" target="_blank">My LinkedIn</a>
+          <a href="https://github.com/santhtadi" target="_blank">Other Projects</a>
+        </div>
+        <h1>Colorization of images using Pix2Pix model in Tensorflow.JS</h1>
+        <p>The github repo for this project can be found at: <a href="https://github.com/santhtadi/Colorize-Images-Pix2Pix-using-TensorflowJS" target="_blank">Github</a> </p>
+        <h4>Licenses</h4>
+        <p>The Dataset I used is ffhq dataset available at <a href="https://github.com/NVlabs/ffhq-dataset">ffhq-dataset</a></p>
+        <p>It is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0 license</a></p>
+        <div class="row p-4">
+            <div class="col-sm-4 p-2">
+                <input type='file' />
+            </div>
+            <div class="col-sm-4 p-2">
+                <button id="convertBtn" onClick="transfer()" style="visibility: hidden;">Convert &xrarr;</button>
+            </div>
+            <div class="col-sm-4 p-2">
+                <button onClick="clearCanvas()">Reset</button>
+            </div>
+        </div>
+        <div class="row p-4">
+            <div class="col-sm-6 p-2">
+                <img id="input_image" src="./images/input_init.jpg" width="256" height="256">
+            </div>
+            <div class="col-sm-6 p-2">
+                <img src="./images/output_init.jpg" id="output_image">
+            </div>
+        </div>
+        <h5>Dataset Paper Citation:</h5>
+        <p>A Style-Based Generator Architecture for Generative Adversarial Networks Tero Karras (NVIDIA), Samuli Laine (NVIDIA), Timo Aila (NVIDIA) https://arxiv.org/abs/1812.04948</p>
+        <h4>Credits: </h4>
+        <p>Huge thanks to the following repositories for the detailed code!</p>
+        <ol>
+            <li><a href="https://github.com/yining1023/pix2pix_tensorflowjs_lite">https://github.com/yining1023/pix2pix_tensorflowjs_lite</a></li>
+            <li><a href="https://github.com/affinelayer/pix2pix-tensorflow">https://github.com/affinelayer/pix2pix-tensorflow</a></li>
+        </ol>
+    <script src="./index.js"> </script>
+    </body>
+</html>
