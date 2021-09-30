@@ -38,6 +38,7 @@ Inconsistent User Experience (fps, internet speed) can become a problem for syst
 2. Upload it to colab and select the GPU instance. Please note that colab uses TF2.0, but affinelayer's repo is built using tfv1, the appropriate changes are suggested in the notebook.
 3. Create your own dataset (each image is 256x256) and stitch them side by side (512x256) (Please refer to the repos in credits for more info).
 4. Follow the instructions in the notebook to generate the pix2pix model and the tfjs model.
-5. Edit the index.js file to meet the requirements.
+5. Place the pict file in models folder.
+6. Edit the index.js file as required.
 
 
