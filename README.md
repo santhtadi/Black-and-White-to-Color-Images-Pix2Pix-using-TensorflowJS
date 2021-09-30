@@ -1,1 +1,1 @@
-# Black-and-White-to-Color-Images-Pix2Pix-using-TensorflowJS
+# Colorize-Images-Pix2Pix-using-TensorflowJS
