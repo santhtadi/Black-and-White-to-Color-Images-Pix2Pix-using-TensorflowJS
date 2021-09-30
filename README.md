@@ -1,7 +1,7 @@
 # Colorize-Images-Pix2Pix-in-TensorflowJS
 
 ## Live Demo
-A Live demo can be found at [santhtadi.github.io](https://santhtadi.github.io/Colorize-Images-Pix2Pix-in-TensorflowJS/)
+A Live demo can be found at [santhtadi.github.io](https://santhtadi.github.io/Colorize-Images-Pix2Pix-in-TensorflowJS/){:target="_blank"}
 
 #Credits
 Huge thanks to https://github.com/yining1023/pix2pix_tensorflowjs_lite and 
